@@ -6,15 +6,37 @@ html {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 8vw;
+    margin-bottom: -10px;
+}
+
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/* For mobile device */
 [class*="col-"] {
     float: left;
     width: 100%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* more For mobile device */
+    p {font-size: 3vw;}
+    h1 {font-size: 10vw;}
+    .col-7 {padding-top: 18vw;}
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets */
+    p {font-size: 3vw;}
+    h1 {font-size: 10vw;}
+    .col-7 {padding-top: 12vw;}
 }
 
 
@@ -32,10 +54,19 @@ html {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  p { font-size: 2vw;}
 }
 
-img {
-    width: 100%;
+.col-7 {
+    margin-top: 4.5%;
+    margin-left: 2vw;
+}
+
+button {
+    width: 20%;
     height: auto;
 }
 
+/* img {
+    
+} */
