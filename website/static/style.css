@@ -6,9 +6,18 @@ html {
     overflow: hidden;
 }
 
+#home-body {
+    background-color: #f8f4f7;
+}
+
 h1 {
-    font-size: 8vw;
+    font-family: 'Playfair Display', serif;
     margin-bottom: -10px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 33px;
 }
 
 
@@ -36,7 +45,8 @@ h1 {
     /* For tablets */
     p {font-size: 3vw;}
     h1 {font-size: 10vw;}
-    .col-7 {padding-top: 12vw;}
+    .col-7 {padding-top: 13.5vw;}
+    button {padding-bottom: 5px; padding-top: 5px; width: 20%;}
 }
 
 
@@ -48,25 +58,41 @@ h1 {
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
+  .col-7 {width: 58.33%; margin-top: 2.5%;}
   .col-8 {width: 66.66%;}
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-  p { font-size: 2vw;}
+  p {font-size: 1.5vw;}
+  h1 {font-size: 7vw;}
+  button {width: 21.5%; padding-bottom: 7px; padding-top: 7px;}
 }
 
 .col-7 {
-    margin-top: 4.5%;
     margin-left: 2vw;
 }
 
 button {
-    width: 20%;
     height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2vw;
+    color: white;
+    border-radius: 0px;
+    border-color: transparent;
 }
 
-/* img {
-    
-} */
+#about-button {
+    margin-left: 0px;
+    background-color: #4b1e3D;
+}
+
+#contact-button {
+    background-color: #ad795b;
+}
+
+#help-button {
+    background-color: #e4d1c3;
+}
