@@ -1,0 +1,39 @@
+<!-- bg color #f8f4f7 -->
+<!-- h1 color #000000 bold -->
+<!-- p color #000000 -->
+<!-- 'About' button bg color #4b1e3D -->
+<!-- 'Contact Us' button bg color #ad795b -->
+<!-- 'Help Out' button bg color #e4d13c -->
+<!-- button text color #ffffff -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+<body>
+     <div class="parent">
+        <div class="div1"><h1>Period<br>Pride JA</h1></div>
+        <div class="div2">
+            <p>We are working to develop Period Pride JA to the quality<br>
+            that our users deserve. Read more about the project, and<br>
+            find out how you can help!</p>
+        </div>
+        <div class="div3"> 
+            <button>About</button>
+            <button>Contact Us</button>
+            <button>Help Out</button>
+        </div>
+        <div class="div4"> 
+            <img src="{{ url_for('static', filename='dog.jpg') }}" alt="Stencil drawing of a women's body, torso down, with flowers over her underwear">
+        </div>
+    </div>
+
+
+</body>
+</html>
