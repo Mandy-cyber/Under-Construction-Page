@@ -44,10 +44,10 @@ p {
 /* IMAGES AND GIFS */
 
 #trixie-gif {
-    height: 28vw;
+    height: 32vw;
     width: auto;
-    margin-left: -45px;
-    margin-top: 18%;
+    margin-left: -57px;
+    margin-top: 15%;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -67,6 +67,7 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR MOBILE DEVICES */
 
+/* TODO get header and buttons to stretch across full width */
 
 @media only screen and (max-width: 400px) {
     #home-body {background-image: url('/static/mobile_bg.png') !important; animation: gradient 10s ease 0.5;}
@@ -77,7 +78,7 @@ p {
     .visible-break {display: none;}
     .col-7 {padding-top: 67vw !important; width: 100%;}
     html {overflow: hidden;}
-    #trixie-gif {height: 45vw; margin-top: 10px;}
+    #trixie-gif {height: 50vw; margin-top: 0px;}
     .home-buttons {display: inline; margin: -5px !important; width: 33vw; height: 20vw !important; font-size: 6vw !important;}
     .col-5 {margin-left: 15.5% !important; margin-top: -160% !important;}
     header {display: block; background-color: #f9b2b6; width: 100%; height: auto; text-align: center;}
