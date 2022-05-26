@@ -1,12 +1,3 @@
-<!-- bg color #f8f4f7 -->
-<!-- h1 color #000000 bold -->
-<!-- p color #000000 -->
-<!-- 'About' button bg color #4b1e3D -->
-<!-- 'Contact Us' button bg color #ad795b -->
-<!-- 'Help Out' button bg color #e4d13c -->
-<!-- button text color #ffffff -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +7,15 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <!-- LINK TO STYLE.CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Home</title>
 </head>
+
 <body id="home-body">
-
-
     <div class="row">
         <div class="col-7" style="text-align: left;">
             <h1>Period<br>Pride JA</h1>
@@ -36,9 +26,9 @@
                 <button class="home-buttons" id="contact-button">Contact Us</button>
                 <button class="home-buttons" id="help-button">Help Out</button>
         </div>
-        <div class="col-5">
-            <!-- <img src="{{ url_for('static', filename='dog.jpg') }}" alt="Stencil drawing of a women's body, torso down, with flowers over her underwear"> -->
-        </div>
+        <!-- <div class="col-5">
+            <img id="flower-woman-img" src="{{ url_for('static', filename='womanbg.png') }}" height="200vw" alt="Stencil drawing of a women's body, torso down, with flowers over her underwear">
+        </div> -->
     </div>
 
 
