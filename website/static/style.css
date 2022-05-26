@@ -6,7 +6,7 @@
   }
 
 #home-body {
-    background-color: #f8f4f7;
+    /* background-color: #f8f4f7; */
     overflow-x: hidden;
 }
 
@@ -139,7 +139,7 @@ p {
 
 .home-buttons:hover {
     color: black;
-    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.24), 0 1px 3px 0 rgba(0,0,0,0.19);
     font-weight: bold;
 }
 
@@ -156,3 +156,30 @@ p {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* GRADIENT BACKGROUND ANIMATION */
+
+body {
+    background: linear-gradient(-45deg, #EEEEFF, #ffe4e1,#fffafa, #FFFFFF );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
