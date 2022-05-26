@@ -70,7 +70,7 @@ p {
     h1 {font-size: 18vw !important;}
     .hidden-break {display: block;}
     .visible-break {display: none;}
-    .col-7 {padding-top: 52vw !important; width: 100%;}
+    .col-7 {padding-top: 48.5vw !important; width: 100%;}
     html {overflow: hidden;}
     #trixie-gif {display: none;}
     .home-buttons {display: inline; margin: -5px !important; width: 33vw; height: 20vw !important; font-size: 6vw !important;}
