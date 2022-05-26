@@ -3,11 +3,11 @@ from flask import Blueprint, render_template, request
 views = Blueprint('views', __name__)
 
 
-@views.route('/under-construction')
+@views.route('/')
 def under_construction_message():
     return render_template("landing.html")
 
-@views.route('/')
+@views.route('/home')
 def home():
     return render_template("home.html")
 
