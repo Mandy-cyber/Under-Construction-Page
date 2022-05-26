@@ -73,9 +73,6 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR MOBILE DEVICES */
 
-/* TODO fix trixie mobile view */
-/* TODO make buttons stretch across the page */
-
 @media only screen and (max-width: 400px) {
     #home-body {background-image: url('/static/mobile_bg.png') !important; animation: gradient 10s ease 0.5;}
     body::-webkit-scrollbar{-ms-overflow-style: none; scrollbar-width: none;display: none;}
@@ -90,6 +87,8 @@ p {
     .home-buttons {display: inline; margin: -5px !important; width: 100% !important; height: 20vw !important; font-size: 6vw !important;}
     header {display: block; background-color: #f9b2b6; width: 100%; height: auto; text-align: center;}
     #header-text {font-family: 'Raleway', sans-serif; color: white;}
+    #spinning-div {margin-top: 20%; margin-left: -33.5vw;}
+    #message {display:none}
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -103,14 +102,14 @@ p {
     .col-5 {margin-left: 6% !important; margin-top: -95% !important;}
     #trixie-gif {height: 30vw;}
     .home-buttons {padding-bottom: 5px; padding-top: 5px; width: 20%; margin-top: -20px; font-size: 2.5vw !important;}
-    html {overflow-x: hidden; overflow-y: scroll;}
+    html {overflow-x: hidden; overflow-y: auto;}
     .row {display: block;}
 }
 
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR DESKTOPS */
 
-@media only screen and (min-width: 772px) {
+@media only screen and (min-width: 773px) {
   html {overflow: hidden;}
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -228,4 +227,27 @@ p {
 }
 
 /* ------------------------------------------------------------------------------------- */
-/* GRADIENT BACKGROUND ANIMATION */
+/* FOR LANDING.HTML */
+
+#landing-body {
+    background-color:#f9b2b6;
+    overflow: hidden;
+}
+
+/* change to 5000s later */
+
+#flower-icon {
+    animation-name: spin;
+    animation-duration: 5000ms; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}

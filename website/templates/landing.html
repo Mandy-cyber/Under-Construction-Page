@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block head %} <meta http-equiv="refresh" content="5;url=/" /> {% endblock %}
+{% block title %}<title>Under Reconstruction</title>{% endblock title %}
+
+
+{% block content %}
+
+<body id="landing-body">
+    <div id="spinning-div">
+        <img id="flower-icon" src="{{ url_for('static', filename='spinner.png') }}" alt="An animation of a pink and white spinning hammer">
+    </div>
+    <div id="message">
+        <p>Under reconstruction</p>
+    </div>
+    
+</body>
+
+{% endblock %}
