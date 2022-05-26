@@ -10,6 +10,10 @@
     overflow-x: hidden;
 }
 
+header {
+    display: none;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* TEXT ELEMENTS */
 
@@ -21,6 +25,14 @@ h1 {
 p {
     font-family: 'Raleway', sans-serif;
     margin-bottom: 33px;
+}
+
+.hidden-break {
+    display: none;
+}
+
+.visible-break {
+    display: block;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -50,12 +62,21 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR MOBILE DEVICES */
 
-@media only screen and (max-width: 480px) {
-    p {font-size: 3vw;}
-    h1 {font-size: 10vw;}
-    .col-7 {padding-top: 18vw;}
-    html{overflow-y:scroll}
+
+@media only screen and (max-width: 400px) {
+    #home-body {background-image: url('/static/mobile_bg.png') !important; animation: gradient 10s ease 0.5;}
+    body::-webkit-scrollbar{-ms-overflow-style: none; scrollbar-width: none;display: none;}
+    p {font-size: 5vw !important;}
+    h1 {font-size: 18vw !important;}
+    .hidden-break {display: block;}
+    .visible-break {display: none;}
+    .col-7 {padding-top: 52vw !important; width: 100%;}
+    html {overflow: hidden;}
     #trixie-gif {display: none;}
+    .home-buttons {display: inline; margin: -5px !important; width: 33vw; height: 20vw !important; font-size: 6vw !important;}
+    .col-5 {margin-left: 15.5% !important; margin-top: -160% !important;}
+    header {display: block; background-color: #f9b2b6; width: 100%; height: auto; text-align: center;}
+    #header-text {font-family: 'Raleway', sans-serif; color: white;}
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -68,7 +89,6 @@ p {
     .col-7 {padding-top: 13.5vw;}
     button {padding-bottom: 5px; padding-top: 5px; width: 20%;}
     html{overflow-y:scroll}
-    #trixie-gif {display: none;}
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -183,3 +203,6 @@ body {
         background-position: 0% 50%;
     }
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* GRADIENT BACKGROUND ANIMATION */
