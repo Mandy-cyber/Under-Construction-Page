@@ -1,10 +1,17 @@
+/* ------------------------------------------------------------------------------------- */
+/* GENERAL */
+
 * {
     box-sizing: border-box;
   }
 
 #home-body {
     background-color: #f8f4f7;
+    overflow-x: hidden;
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* TEXT ELEMENTS */
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -16,27 +23,43 @@ p {
     margin-bottom: 33px;
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* IMAGES AND GIFS */
+
+#trixie-gif {
+    height: 28vw;
+    width: auto;
+    margin-left: -45px;
+    margin-top: 18%;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* MISC - but to do with responsive stuff */
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-
 [class*="col-"] {
-    /* For mobile device */
     float: left;
     width: 100%;
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* MEDIA QUERY FOR MOBILE DEVICES */
 
 @media only screen and (max-width: 480px) {
-    /* more For mobile device */
     p {font-size: 3vw;}
     h1 {font-size: 10vw;}
     .col-7 {padding-top: 18vw;}
-    html{overflow:scroll}
+    html{overflow-y:scroll}
+    #trixie-gif {display: none;}
 }
+
+/* ------------------------------------------------------------------------------------- */
+/* MEDIA QUERY FOR TABLETS */
 
 @media only screen and (max-width: 768px) {
     /* For tablets */
@@ -44,12 +67,14 @@ p {
     h1 {font-size: 10vw;}
     .col-7 {padding-top: 13.5vw;}
     button {padding-bottom: 5px; padding-top: 5px; width: 20%;}
-    html{overflow:scroll}
+    html{overflow-y:scroll}
+    #trixie-gif {display: none;}
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* MEDIA QUERY FOR DESKTOPS */
 
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   html {overflow: hidden;}
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -57,7 +82,7 @@ p {
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%; height: 100%;}
   .col-6 {width: 50%;}
-  .col-7 {width: 58.33%; margin-top: 3.4%;}
+  .col-7 {width: 58.33%; margin-top: 3.6%;}
   .col-8 {width: 66.66%;}
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
@@ -68,8 +93,11 @@ p {
   button {width: 21.5%; padding-bottom: 7px; padding-top: 7px;}
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* COLUMN SPECIFICATIONS */
+
 .col-7 {
-    margin-left: 2vw;
+    margin-left: 2.25vw;
 }
 
 .col-5 {
@@ -77,10 +105,14 @@ p {
     margin-top: -38.5%;
 }
 
-button {
+/* ------------------------------------------------------------------------------------- */
+/* BUTTONS */
+
+.home-buttons {
     height: auto;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 10px;
     font-family: 'Shadows Into Light', cursive;
     font-size: 2vw;
     color: white;
@@ -100,3 +132,27 @@ button {
 #help-button {
     background-color: #fee0df;
 }
+
+
+/* ------------------------------------------------------------------------------------- */
+/* BUTTON HOVERS */
+
+.home-buttons:hover {
+    color: black;
+    box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
+    font-weight: bold;
+}
+
+#about-button:hover {
+    background-color: white;
+}
+
+#contact-button:hover {
+    background-color: white;
+}
+
+#help-button:hover {
+    background-color: white;
+}
+
+/* ------------------------------------------------------------------------------------- */
