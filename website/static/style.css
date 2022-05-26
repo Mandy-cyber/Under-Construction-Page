@@ -2,10 +2,6 @@
     box-sizing: border-box;
   }
 
-html {
-    overflow: hidden;
-}
-
 #home-body {
     background-color: #f8f4f7;
 }
@@ -20,15 +16,15 @@ p {
     margin-bottom: 33px;
 }
 
-
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
-/* For mobile device */
+
 [class*="col-"] {
+    /* For mobile device */
     float: left;
     width: 100%;
 }
@@ -39,6 +35,7 @@ p {
     p {font-size: 3vw;}
     h1 {font-size: 10vw;}
     .col-7 {padding-top: 18vw;}
+    html{overflow:scroll}
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,18 +44,20 @@ p {
     h1 {font-size: 10vw;}
     .col-7 {padding-top: 13.5vw;}
     button {padding-bottom: 5px; padding-top: 5px; width: 20%;}
+    html{overflow:scroll}
 }
 
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  html {overflow: hidden;}
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
   .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
+  .col-5 {width: 41.66%; height: 100%;}
   .col-6 {width: 50%;}
-  .col-7 {width: 58.33%; margin-top: 2.5%;}
+  .col-7 {width: 58.33%; margin-top: 3.4%;}
   .col-8 {width: 66.66%;}
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
@@ -71,6 +70,11 @@ p {
 
 .col-7 {
     margin-left: 2vw;
+}
+
+.col-5 {
+    margin-left: 55vw;
+    margin-top: -38.5%;
 }
 
 button {
@@ -86,13 +90,13 @@ button {
 
 #about-button {
     margin-left: 0px;
-    background-color: #4b1e3D;
+    background-color: #e07980;
 }
 
 #contact-button {
-    background-color: #ad795b;
+    background-color: #f9b2b6;
 }
 
 #help-button {
-    background-color: #e4d1c3;
+    background-color: #fee0df;
 }
