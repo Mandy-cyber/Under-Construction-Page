@@ -73,7 +73,7 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR MOBILE DEVICES */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
     #home-body {background-image: url('/static/mobile_bg.png') !important; animation: gradient 10s ease 0.5 !important;}
     body::-webkit-scrollbar{-ms-overflow-style: none; scrollbar-width: none;display: none;}
     p {font-size: 5vw !important;}
@@ -93,7 +93,7 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* MEDIA QUERY FOR TABLETS */
 
-@media only screen and (max-width: 772px) and (min-width: 401px) {
+@media only screen and (max-width: 772px) and (min-width: 415px) {
     p {font-size: 3vw;}
     h1 {font-size: 10vw;}
     .col-7 {padding-top: 25vw !important;}
