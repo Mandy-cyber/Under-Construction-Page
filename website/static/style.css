@@ -200,7 +200,7 @@ p {
 /* ------------------------------------------------------------------------------------- */
 /* GRADIENT BACKGROUND ANIMATION */
 
-.home-body {
+#home-body {
     background: linear-gradient(-45deg, #EEEEFF, #ffe4e1,#fffafa, #FFFFFF );
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
